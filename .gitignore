@@ -3,3 +3,6 @@
 ################################################################################
 
 /.vs
+/DbClientApp/.vs
+/DbClientApp/DbClientApp/bin/Debug/net6.0-windows
+/DbClientApp/DbClientApp/obj
