@@ -6,3 +6,6 @@
 /DbClientApp/.vs
 /DbClientApp/DbClientApp/bin/Debug/net6.0-windows
 /DbClientApp/DbClientApp/obj
+/WinFormsApp013/.vs
+/WinFormsApp013/WinFormsApp013/bin/Debug/net7.0-windows
+/WinFormsApp013/WinFormsApp013/obj
