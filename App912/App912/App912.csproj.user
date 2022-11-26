@@ -7,15 +7,9 @@
     <Compile Update="Form2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="OrmForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="Task1.cs">
-      <SubType>Form</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Update="MyDataSet.xsd">
+    <None Update="DataSet912.xsd">
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>

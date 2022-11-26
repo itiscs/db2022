@@ -1,3 +1,4 @@
+using Microsoft.EntityFrameworkCore;
 using System.Data.SqlClient;
 using WinFormsApp013.MyDataSetTableAdapters;
 
@@ -35,8 +36,7 @@ namespace WinFormsApp013
         {
             //string prod = prodGrid.CurrentRow.Cells[1].Value.ToString();
             string prod = prodGrid.CurrentRow.Cells["nameDataGridViewTextBoxColumn"].Value.ToString();
-
-            
+                       
 
             SqlConnection con = new SqlConnection("Data Source=(localdb)\\mssqllocaldb;Initial Catalog=base013;Integrated Security=True");
             SqlCommand cmd = new SqlCommand();
@@ -60,5 +60,34 @@ namespace WinFormsApp013
             var res = cmd.Parameters["@sum"].Value.ToString();
             lblResult.Text = $"Сумма = {res}";
         }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                prodTA.Update(ds.Products);
+                custTA.Update(ds.Customers);
+                ordersTA.Update(ds.Orders);
+                MessageBox.Show("Изменения сохранены!");
+            }
+            catch(Exception ex) 
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void oRMФормаToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OrmForm f = new OrmForm();
+            f.ShowDialog();
+        }
+
+        private void задача1ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Task1Form f = new Task1Form();
+            f.ShowDialog();
+        }
     }
 }
+
+

@@ -17,6 +17,7 @@ namespace WinFormsApp013
         ProductsTableAdapter prodTA = new ProductsTableAdapter();
         CustomersTableAdapter custTA = new CustomersTableAdapter();
         OrdersTableAdapter ordersTA = new OrdersTableAdapter();
+        AllDataTableAdapter viewTA = new AllDataTableAdapter();
 
         public Form2()
         {
@@ -24,26 +25,30 @@ namespace WinFormsApp013
             prodTA.Fill(ds.Products);
             custTA.Fill(ds.Customers);
             ordersTA.Fill(ds.Orders);
+            dataGridView1.AutoGenerateColumns = true;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            dataGridView1.Refresh();
-            bindingSource1.DataSource = ds.Customers;
+            dataGridView1.DataSource = ds.Customers;
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
 
-            dataGridView1.Refresh();
-            bindingSource1.DataSource = ds.Products;
+            dataGridView1.DataSource = ds.Products;
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
 
-            dataGridView1.Refresh();
-            bindingSource1.DataSource = ds.Orders;
+            dataGridView1.DataSource = ds.Orders;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+            dataGridView1.DataSource = ds.AllData;
         }
     }
 }

@@ -55,6 +55,7 @@
             this.формыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.альтернативнаяФормаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.oRMФормаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.задача1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.задача2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.задача3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -62,6 +63,7 @@
             this.dateTo = new System.Windows.Forms.DateTimePicker();
             this.btnProc = new System.Windows.Forms.Button();
             this.lblResult = new System.Windows.Forms.Label();
+            this.btnSave = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.prodGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -282,7 +284,7 @@
             this.задача3ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1717, 40);
+            this.menuStrip1.Size = new System.Drawing.Size(1717, 42);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -290,9 +292,10 @@
             // 
             this.формыToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.альтернативнаяФормаToolStripMenuItem,
-            this.viewToolStripMenuItem});
+            this.viewToolStripMenuItem,
+            this.oRMФормаToolStripMenuItem});
             this.формыToolStripMenuItem.Name = "формыToolStripMenuItem";
-            this.формыToolStripMenuItem.Size = new System.Drawing.Size(113, 36);
+            this.формыToolStripMenuItem.Size = new System.Drawing.Size(113, 38);
             this.формыToolStripMenuItem.Text = "Формы";
             // 
             // альтернативнаяФормаToolStripMenuItem
@@ -308,22 +311,30 @@
             this.viewToolStripMenuItem.Size = new System.Drawing.Size(405, 44);
             this.viewToolStripMenuItem.Text = "View";
             // 
+            // oRMФормаToolStripMenuItem
+            // 
+            this.oRMФормаToolStripMenuItem.Name = "oRMФормаToolStripMenuItem";
+            this.oRMФормаToolStripMenuItem.Size = new System.Drawing.Size(405, 44);
+            this.oRMФормаToolStripMenuItem.Text = "ORM форма";
+            this.oRMФормаToolStripMenuItem.Click += new System.EventHandler(this.oRMФормаToolStripMenuItem_Click);
+            // 
             // задача1ToolStripMenuItem
             // 
             this.задача1ToolStripMenuItem.Name = "задача1ToolStripMenuItem";
-            this.задача1ToolStripMenuItem.Size = new System.Drawing.Size(130, 36);
+            this.задача1ToolStripMenuItem.Size = new System.Drawing.Size(130, 38);
             this.задача1ToolStripMenuItem.Text = "Задача 1";
+            this.задача1ToolStripMenuItem.Click += new System.EventHandler(this.задача1ToolStripMenuItem_Click);
             // 
             // задача2ToolStripMenuItem
             // 
             this.задача2ToolStripMenuItem.Name = "задача2ToolStripMenuItem";
-            this.задача2ToolStripMenuItem.Size = new System.Drawing.Size(130, 36);
+            this.задача2ToolStripMenuItem.Size = new System.Drawing.Size(130, 38);
             this.задача2ToolStripMenuItem.Text = "Задача 2";
             // 
             // задача3ToolStripMenuItem
             // 
             this.задача3ToolStripMenuItem.Name = "задача3ToolStripMenuItem";
-            this.задача3ToolStripMenuItem.Size = new System.Drawing.Size(130, 36);
+            this.задача3ToolStripMenuItem.Size = new System.Drawing.Size(130, 38);
             this.задача3ToolStripMenuItem.Text = "Задача 3";
             // 
             // dateFrom
@@ -361,11 +372,22 @@
             this.lblResult.TabIndex = 7;
             this.lblResult.Text = "Сумма = ";
             // 
+            // btnSave
+            // 
+            this.btnSave.Location = new System.Drawing.Point(1432, 546);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(150, 46);
+            this.btnSave.TabIndex = 8;
+            this.btnSave.Text = "Сохранить";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1717, 960);
+            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.lblResult);
             this.Controls.Add(this.btnProc);
             this.Controls.Add(this.dateTo);
@@ -426,5 +448,7 @@
         private DateTimePicker dateTo;
         private Button btnProc;
         private Label lblResult;
+        private Button btnSave;
+        private ToolStripMenuItem oRMФормаToolStripMenuItem;
     }
 }
