@@ -7,7 +7,25 @@
     <Compile Update="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="OrmForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Task1cmd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Task1orm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Task1sql.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Task3orm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Task3sql.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

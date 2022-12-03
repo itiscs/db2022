@@ -87,6 +87,18 @@ namespace WinFormsApp013
             Task1Form f = new Task1Form();
             f.ShowDialog();
         }
+
+        private void viewToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ViewForm f = new ViewForm();
+            f.ShowDialog();
+        }
+
+        private void задача3ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Task3form f = new Task3form();
+            f.ShowDialog();
+        }
     }
 }
 

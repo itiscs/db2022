@@ -310,6 +310,7 @@
             this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
             this.viewToolStripMenuItem.Size = new System.Drawing.Size(405, 44);
             this.viewToolStripMenuItem.Text = "View";
+            this.viewToolStripMenuItem.Click += new System.EventHandler(this.viewToolStripMenuItem_Click);
             // 
             // oRMФормаToolStripMenuItem
             // 
@@ -336,6 +337,7 @@
             this.задача3ToolStripMenuItem.Name = "задача3ToolStripMenuItem";
             this.задача3ToolStripMenuItem.Size = new System.Drawing.Size(130, 38);
             this.задача3ToolStripMenuItem.Text = "Задача 3";
+            this.задача3ToolStripMenuItem.Click += new System.EventHandler(this.задача3ToolStripMenuItem_Click);
             // 
             // dateFrom
             // 

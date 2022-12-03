@@ -13,6 +13,12 @@
     <Compile Update="Task1.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Task3form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Update="MyDataSet.xsd">

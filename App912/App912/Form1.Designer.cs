@@ -53,12 +53,25 @@
             this.ordersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.btnSave = new System.Windows.Forms.Button();
             this.btnRefresh = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.формыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.альтернативнаяToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.oRMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.задача1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sQLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.oRMToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.задача2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.задача3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sQLToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.oRMToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -72,11 +85,11 @@
             this.addressDataGridViewTextBoxColumn,
             this.phoneDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.customersBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 57);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 82;
             this.dataGridView1.RowTemplate.Height = 41;
-            this.dataGridView1.Size = new System.Drawing.Size(1106, 267);
+            this.dataGridView1.Size = new System.Drawing.Size(1106, 222);
             this.dataGridView1.TabIndex = 0;
             // 
             // idDataGridViewTextBoxColumn
@@ -282,6 +295,100 @@
             this.btnRefresh.UseVisualStyleBackColor = true;
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.формыToolStripMenuItem,
+            this.задача1ToolStripMenuItem,
+            this.задача2ToolStripMenuItem,
+            this.задача3ToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1547, 42);
+            this.menuStrip1.TabIndex = 5;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // формыToolStripMenuItem
+            // 
+            this.формыToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.альтернативнаяToolStripMenuItem,
+            this.oRMToolStripMenuItem,
+            this.viewToolStripMenuItem});
+            this.формыToolStripMenuItem.Name = "формыToolStripMenuItem";
+            this.формыToolStripMenuItem.Size = new System.Drawing.Size(113, 38);
+            this.формыToolStripMenuItem.Text = "Формы";
+            // 
+            // альтернативнаяToolStripMenuItem
+            // 
+            this.альтернативнаяToolStripMenuItem.Name = "альтернативнаяToolStripMenuItem";
+            this.альтернативнаяToolStripMenuItem.Size = new System.Drawing.Size(325, 44);
+            this.альтернативнаяToolStripMenuItem.Text = "Альтернативная";
+            // 
+            // oRMToolStripMenuItem
+            // 
+            this.oRMToolStripMenuItem.Name = "oRMToolStripMenuItem";
+            this.oRMToolStripMenuItem.Size = new System.Drawing.Size(325, 44);
+            this.oRMToolStripMenuItem.Text = "ORM";
+            // 
+            // viewToolStripMenuItem
+            // 
+            this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
+            this.viewToolStripMenuItem.Size = new System.Drawing.Size(325, 44);
+            this.viewToolStripMenuItem.Text = "View";
+            // 
+            // задача1ToolStripMenuItem
+            // 
+            this.задача1ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.sQLToolStripMenuItem,
+            this.oRMToolStripMenuItem1});
+            this.задача1ToolStripMenuItem.Name = "задача1ToolStripMenuItem";
+            this.задача1ToolStripMenuItem.Size = new System.Drawing.Size(130, 38);
+            this.задача1ToolStripMenuItem.Text = "Задача 1";
+            // 
+            // sQLToolStripMenuItem
+            // 
+            this.sQLToolStripMenuItem.Name = "sQLToolStripMenuItem";
+            this.sQLToolStripMenuItem.Size = new System.Drawing.Size(201, 44);
+            this.sQLToolStripMenuItem.Text = "SQL";
+            this.sQLToolStripMenuItem.Click += new System.EventHandler(this.sQLToolStripMenuItem_Click);
+            // 
+            // oRMToolStripMenuItem1
+            // 
+            this.oRMToolStripMenuItem1.Name = "oRMToolStripMenuItem1";
+            this.oRMToolStripMenuItem1.Size = new System.Drawing.Size(201, 44);
+            this.oRMToolStripMenuItem1.Text = "ORM";
+            this.oRMToolStripMenuItem1.Click += new System.EventHandler(this.oRMToolStripMenuItem1_Click);
+            // 
+            // задача2ToolStripMenuItem
+            // 
+            this.задача2ToolStripMenuItem.Name = "задача2ToolStripMenuItem";
+            this.задача2ToolStripMenuItem.Size = new System.Drawing.Size(130, 38);
+            this.задача2ToolStripMenuItem.Text = "Задача 2";
+            // 
+            // задача3ToolStripMenuItem
+            // 
+            this.задача3ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.sQLToolStripMenuItem1,
+            this.oRMToolStripMenuItem2});
+            this.задача3ToolStripMenuItem.Name = "задача3ToolStripMenuItem";
+            this.задача3ToolStripMenuItem.Size = new System.Drawing.Size(130, 38);
+            this.задача3ToolStripMenuItem.Text = "Задача 3";
+            // 
+            // sQLToolStripMenuItem1
+            // 
+            this.sQLToolStripMenuItem1.Name = "sQLToolStripMenuItem1";
+            this.sQLToolStripMenuItem1.Size = new System.Drawing.Size(359, 44);
+            this.sQLToolStripMenuItem1.Text = "SQL";
+            this.sQLToolStripMenuItem1.Click += new System.EventHandler(this.sQLToolStripMenuItem1_Click);
+            // 
+            // oRMToolStripMenuItem2
+            // 
+            this.oRMToolStripMenuItem2.Name = "oRMToolStripMenuItem2";
+            this.oRMToolStripMenuItem2.Size = new System.Drawing.Size(359, 44);
+            this.oRMToolStripMenuItem2.Text = "ORM";
+            this.oRMToolStripMenuItem2.Click += new System.EventHandler(this.oRMToolStripMenuItem2_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
@@ -292,6 +399,8 @@
             this.Controls.Add(this.dataGridView3);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -301,7 +410,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -331,5 +443,17 @@
         private BindingSource ordersBindingSource;
         private Button btnSave;
         private Button btnRefresh;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem формыToolStripMenuItem;
+        private ToolStripMenuItem альтернативнаяToolStripMenuItem;
+        private ToolStripMenuItem oRMToolStripMenuItem;
+        private ToolStripMenuItem viewToolStripMenuItem;
+        private ToolStripMenuItem задача1ToolStripMenuItem;
+        private ToolStripMenuItem sQLToolStripMenuItem;
+        private ToolStripMenuItem oRMToolStripMenuItem1;
+        private ToolStripMenuItem задача2ToolStripMenuItem;
+        private ToolStripMenuItem задача3ToolStripMenuItem;
+        private ToolStripMenuItem sQLToolStripMenuItem1;
+        private ToolStripMenuItem oRMToolStripMenuItem2;
     }
 }

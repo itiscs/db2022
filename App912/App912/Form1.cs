@@ -39,6 +39,30 @@ namespace App912
             prodTA.Fill(ds.Products);
             ordTA.Fill(ds.Orders);
         }
+
+        private void sQLToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Task1sql f = new Task1sql();
+            f.ShowDialog();
+        }
+
+        private void oRMToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Task1orm f = new Task1orm();
+            f.ShowDialog();
+        }
+
+        private void sQLToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Task3sql f = new Task3sql();
+            f.ShowDialog();
+        }
+
+        private void oRMToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            Task3orm f = new Task3orm();
+            f.ShowDialog();
+        }
     }
 }
 

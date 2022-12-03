@@ -64,6 +64,13 @@
             this.альтернативнаяToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.oRMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.задача1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sQLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.oRMToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.sqlCommandToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.задача2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.задача3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sQLToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.oRMToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.fkordcustBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.fkordprodBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.ordersCustomersBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -365,10 +372,12 @@
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.формыToolStripMenuItem,
-            this.задача1ToolStripMenuItem});
+            this.задача1ToolStripMenuItem,
+            this.задача2ToolStripMenuItem,
+            this.задача3ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1381, 40);
+            this.menuStrip1.Size = new System.Drawing.Size(1381, 42);
             this.menuStrip1.TabIndex = 13;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -379,7 +388,7 @@
             this.альтернативнаяToolStripMenuItem,
             this.oRMToolStripMenuItem});
             this.формыToolStripMenuItem.Name = "формыToolStripMenuItem";
-            this.формыToolStripMenuItem.Size = new System.Drawing.Size(113, 36);
+            this.формыToolStripMenuItem.Size = new System.Drawing.Size(113, 38);
             this.формыToolStripMenuItem.Text = "Формы";
             // 
             // основнаяToolStripMenuItem
@@ -404,9 +413,63 @@
             // 
             // задача1ToolStripMenuItem
             // 
+            this.задача1ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.sQLToolStripMenuItem,
+            this.oRMToolStripMenuItem1,
+            this.sqlCommandToolStripMenuItem});
             this.задача1ToolStripMenuItem.Name = "задача1ToolStripMenuItem";
-            this.задача1ToolStripMenuItem.Size = new System.Drawing.Size(130, 36);
+            this.задача1ToolStripMenuItem.Size = new System.Drawing.Size(130, 38);
             this.задача1ToolStripMenuItem.Text = "Задача 1";
+            // 
+            // sQLToolStripMenuItem
+            // 
+            this.sQLToolStripMenuItem.Name = "sQLToolStripMenuItem";
+            this.sQLToolStripMenuItem.Size = new System.Drawing.Size(291, 44);
+            this.sQLToolStripMenuItem.Text = "SQL";
+            this.sQLToolStripMenuItem.Click += new System.EventHandler(this.sQLToolStripMenuItem_Click);
+            // 
+            // oRMToolStripMenuItem1
+            // 
+            this.oRMToolStripMenuItem1.Name = "oRMToolStripMenuItem1";
+            this.oRMToolStripMenuItem1.Size = new System.Drawing.Size(291, 44);
+            this.oRMToolStripMenuItem1.Text = "ORM";
+            this.oRMToolStripMenuItem1.Click += new System.EventHandler(this.oRMToolStripMenuItem1_Click);
+            // 
+            // sqlCommandToolStripMenuItem
+            // 
+            this.sqlCommandToolStripMenuItem.Name = "sqlCommandToolStripMenuItem";
+            this.sqlCommandToolStripMenuItem.Size = new System.Drawing.Size(291, 44);
+            this.sqlCommandToolStripMenuItem.Text = "SqlCommand";
+            this.sqlCommandToolStripMenuItem.Click += new System.EventHandler(this.sqlCommandToolStripMenuItem_Click);
+            // 
+            // задача2ToolStripMenuItem
+            // 
+            this.задача2ToolStripMenuItem.Name = "задача2ToolStripMenuItem";
+            this.задача2ToolStripMenuItem.Size = new System.Drawing.Size(130, 38);
+            this.задача2ToolStripMenuItem.Text = "Задача 2";
+            // 
+            // задача3ToolStripMenuItem
+            // 
+            this.задача3ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.sQLToolStripMenuItem1,
+            this.oRMToolStripMenuItem2});
+            this.задача3ToolStripMenuItem.Name = "задача3ToolStripMenuItem";
+            this.задача3ToolStripMenuItem.Size = new System.Drawing.Size(130, 38);
+            this.задача3ToolStripMenuItem.Text = "Задача 3";
+            // 
+            // sQLToolStripMenuItem1
+            // 
+            this.sQLToolStripMenuItem1.Name = "sQLToolStripMenuItem1";
+            this.sQLToolStripMenuItem1.Size = new System.Drawing.Size(359, 44);
+            this.sQLToolStripMenuItem1.Text = "SQL";
+            this.sQLToolStripMenuItem1.Click += new System.EventHandler(this.sQLToolStripMenuItem1_Click);
+            // 
+            // oRMToolStripMenuItem2
+            // 
+            this.oRMToolStripMenuItem2.Name = "oRMToolStripMenuItem2";
+            this.oRMToolStripMenuItem2.Size = new System.Drawing.Size(359, 44);
+            this.oRMToolStripMenuItem2.Text = "ORM";
+            this.oRMToolStripMenuItem2.Click += new System.EventHandler(this.oRMToolStripMenuItem2_Click);
             // 
             // fkordcustBindingSource
             // 
@@ -509,5 +572,12 @@
         private DataGridViewTextBoxColumn amountDataGridViewTextBoxColumn;
         private DataGridViewComboBoxColumn Product;
         private DataGridViewComboBoxColumn Customer;
+        private ToolStripMenuItem sQLToolStripMenuItem;
+        private ToolStripMenuItem oRMToolStripMenuItem1;
+        private ToolStripMenuItem sqlCommandToolStripMenuItem;
+        private ToolStripMenuItem задача2ToolStripMenuItem;
+        private ToolStripMenuItem задача3ToolStripMenuItem;
+        private ToolStripMenuItem sQLToolStripMenuItem1;
+        private ToolStripMenuItem oRMToolStripMenuItem2;
     }
 }

@@ -158,12 +158,14 @@ namespace FormsForDB
         private void customersDataGridView_Click(object sender, EventArgs e)
         {
             customersDataGridView.DataSource = customersBindingSource;
+            productsDataGridView.DataSource = productsBindingSource;
             ordersDataGridView.DataSource = fkordcustBindingSource;
         }
 
         private void productsDataGridView_Click(object sender, EventArgs e)
         {
             productsDataGridView.DataSource = productsBindingSource;
+            customersBindingSource.DataSource = customersBindingSource;
             ordersDataGridView.DataSource = fkordprodBindingSource;
         }
 
@@ -192,6 +194,36 @@ namespace FormsForDB
                 ordersDataGridView.Rows[e.RowIndex].Cells["amountDataGridViewTextBoxColumn"].Value = 
                       price * count;
             }
+        }
+
+        private void sQLToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Task1sql f = new Task1sql();
+            f.ShowDialog();
+        }
+
+        private void oRMToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Task1orm f = new Task1orm();
+            f.ShowDialog();
+        }
+
+        private void sqlCommandToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Task1cmd f = new Task1cmd();
+            f.ShowDialog();
+        }
+
+        private void sQLToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Task3sql f = new Task3sql();
+            f.ShowDialog();
+        }
+
+        private void oRMToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            Task3orm f = new Task3orm();
+            f.ShowDialog();
         }
     }
 }
