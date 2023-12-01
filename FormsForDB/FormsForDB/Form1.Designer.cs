@@ -68,6 +68,7 @@
             this.oRMToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.sqlCommandToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.задача2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sQLToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.задача3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sQLToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.oRMToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
@@ -215,6 +216,7 @@
             this.ordersDataGridView.RowTemplate.Height = 41;
             this.ordersDataGridView.Size = new System.Drawing.Size(1289, 280);
             this.ordersDataGridView.TabIndex = 2;
+            this.ordersDataGridView.CellValidating += new System.Windows.Forms.DataGridViewCellValidatingEventHandler(this.ordersDataGridView_CellValidating);
             this.ordersDataGridView.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.ordersDataGridView_CellValueChanged);
             this.ordersDataGridView.CurrentCellChanged += new System.EventHandler(this.ordersDataGridView_CurrentCellChanged);
             this.ordersDataGridView.Click += new System.EventHandler(this.ordersDataGridView_Click);
@@ -377,7 +379,7 @@
             this.задача3ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1381, 42);
+            this.menuStrip1.Size = new System.Drawing.Size(1381, 40);
             this.menuStrip1.TabIndex = 13;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -388,7 +390,7 @@
             this.альтернативнаяToolStripMenuItem,
             this.oRMToolStripMenuItem});
             this.формыToolStripMenuItem.Name = "формыToolStripMenuItem";
-            this.формыToolStripMenuItem.Size = new System.Drawing.Size(113, 38);
+            this.формыToolStripMenuItem.Size = new System.Drawing.Size(113, 36);
             this.формыToolStripMenuItem.Text = "Формы";
             // 
             // основнаяToolStripMenuItem
@@ -418,7 +420,7 @@
             this.oRMToolStripMenuItem1,
             this.sqlCommandToolStripMenuItem});
             this.задача1ToolStripMenuItem.Name = "задача1ToolStripMenuItem";
-            this.задача1ToolStripMenuItem.Size = new System.Drawing.Size(130, 38);
+            this.задача1ToolStripMenuItem.Size = new System.Drawing.Size(130, 36);
             this.задача1ToolStripMenuItem.Text = "Задача 1";
             // 
             // sQLToolStripMenuItem
@@ -444,9 +446,18 @@
             // 
             // задача2ToolStripMenuItem
             // 
+            this.задача2ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.sQLToolStripMenuItem2});
             this.задача2ToolStripMenuItem.Name = "задача2ToolStripMenuItem";
-            this.задача2ToolStripMenuItem.Size = new System.Drawing.Size(130, 38);
+            this.задача2ToolStripMenuItem.Size = new System.Drawing.Size(130, 36);
             this.задача2ToolStripMenuItem.Text = "Задача 2";
+            // 
+            // sQLToolStripMenuItem2
+            // 
+            this.sQLToolStripMenuItem2.Name = "sQLToolStripMenuItem2";
+            this.sQLToolStripMenuItem2.Size = new System.Drawing.Size(189, 44);
+            this.sQLToolStripMenuItem2.Text = "SQL";
+            this.sQLToolStripMenuItem2.Click += new System.EventHandler(this.sQLToolStripMenuItem2_Click);
             // 
             // задача3ToolStripMenuItem
             // 
@@ -454,20 +465,20 @@
             this.sQLToolStripMenuItem1,
             this.oRMToolStripMenuItem2});
             this.задача3ToolStripMenuItem.Name = "задача3ToolStripMenuItem";
-            this.задача3ToolStripMenuItem.Size = new System.Drawing.Size(130, 38);
+            this.задача3ToolStripMenuItem.Size = new System.Drawing.Size(130, 36);
             this.задача3ToolStripMenuItem.Text = "Задача 3";
             // 
             // sQLToolStripMenuItem1
             // 
             this.sQLToolStripMenuItem1.Name = "sQLToolStripMenuItem1";
-            this.sQLToolStripMenuItem1.Size = new System.Drawing.Size(359, 44);
+            this.sQLToolStripMenuItem1.Size = new System.Drawing.Size(201, 44);
             this.sQLToolStripMenuItem1.Text = "SQL";
             this.sQLToolStripMenuItem1.Click += new System.EventHandler(this.sQLToolStripMenuItem1_Click);
             // 
             // oRMToolStripMenuItem2
             // 
             this.oRMToolStripMenuItem2.Name = "oRMToolStripMenuItem2";
-            this.oRMToolStripMenuItem2.Size = new System.Drawing.Size(359, 44);
+            this.oRMToolStripMenuItem2.Size = new System.Drawing.Size(201, 44);
             this.oRMToolStripMenuItem2.Text = "ORM";
             this.oRMToolStripMenuItem2.Click += new System.EventHandler(this.oRMToolStripMenuItem2_Click);
             // 
@@ -579,5 +590,6 @@
         private ToolStripMenuItem задача3ToolStripMenuItem;
         private ToolStripMenuItem sQLToolStripMenuItem1;
         private ToolStripMenuItem oRMToolStripMenuItem2;
+        private ToolStripMenuItem sQLToolStripMenuItem2;
     }
 }

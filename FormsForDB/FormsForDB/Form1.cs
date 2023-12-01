@@ -165,7 +165,7 @@ namespace FormsForDB
         private void productsDataGridView_Click(object sender, EventArgs e)
         {
             productsDataGridView.DataSource = productsBindingSource;
-            customersBindingSource.DataSource = customersBindingSource;
+            customersDataGridView.DataSource = customersBindingSource;
             ordersDataGridView.DataSource = fkordprodBindingSource;
         }
 
@@ -224,6 +224,28 @@ namespace FormsForDB
         {
             Task3orm f = new Task3orm();
             f.ShowDialog();
+        }
+
+        private void sQLToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            Task2form f = new Task2form();
+            f.ShowDialog();
+        }
+
+        private void ordersDataGridView_CellValidating(object sender, DataGridViewCellValidatingEventArgs e)
+        {
+            try
+            {
+                if (ordersDataGridView.Columns[e.ColumnIndex].HeaderText == "Количество")
+                    if (Convert.ToInt32(e.FormattedValue) <= 0)
+                        throw new Exception("Количество должно быть положительным");
+            }
+            catch (Exception a)
+            {
+                e.Cancel = true;
+                MessageBox.Show(a.Message);
+                ordersDataGridView.Rows[e.RowIndex].ErrorText = a.Message;
+            }
         }
     }
 }

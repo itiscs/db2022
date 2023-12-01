@@ -1,4 +1,6 @@
 ﻿using FormsForDB.Models;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -21,7 +23,7 @@ namespace FormsForDB
         }
 
         private void btnCustomers_Click(object sender, EventArgs e)
-        {            
+        {
             dataGridView1.DataSource = db.Customers.Select(c => new {c.Id, c.Name,
             c.City,c.Address,c.Phone}).ToList();
             lblTableName.Text = "Покупатели";
