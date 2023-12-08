@@ -65,6 +65,7 @@
             альтернативнаяToolStripMenuItem = new ToolStripMenuItem();
             задача1ToolStripMenuItem = new ToolStripMenuItem();
             задача2ToolStripMenuItem = new ToolStripMenuItem();
+            задача3ToolStripMenuItem = new ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)dgvProducts).BeginInit();
             ((System.ComponentModel.ISupportInitialize)productsBindingSource).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgvCustomers).BeginInit();
@@ -318,7 +319,7 @@
             // menuStrip1
             // 
             menuStrip1.ImageScalingSize = new Size(36, 36);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { формыToolStripMenuItem, задача1ToolStripMenuItem, задача2ToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { формыToolStripMenuItem, задача1ToolStripMenuItem, задача2ToolStripMenuItem, задача3ToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(1929, 47);
@@ -335,13 +336,13 @@
             // основнаяToolStripMenuItem
             // 
             основнаяToolStripMenuItem.Name = "основнаяToolStripMenuItem";
-            основнаяToolStripMenuItem.Size = new Size(403, 48);
+            основнаяToolStripMenuItem.Size = new Size(368, 48);
             основнаяToolStripMenuItem.Text = "Основная";
             // 
             // альтернативнаяToolStripMenuItem
             // 
             альтернативнаяToolStripMenuItem.Name = "альтернативнаяToolStripMenuItem";
-            альтернативнаяToolStripMenuItem.Size = new Size(403, 48);
+            альтернативнаяToolStripMenuItem.Size = new Size(368, 48);
             альтернативнаяToolStripMenuItem.Text = "Альтернативная";
             альтернативнаяToolStripMenuItem.Click += альтернативнаяToolStripMenuItem_Click;
             // 
@@ -357,6 +358,13 @@
             задача2ToolStripMenuItem.Name = "задача2ToolStripMenuItem";
             задача2ToolStripMenuItem.Size = new Size(148, 43);
             задача2ToolStripMenuItem.Text = "Задача 2";
+            // 
+            // задача3ToolStripMenuItem
+            // 
+            задача3ToolStripMenuItem.Name = "задача3ToolStripMenuItem";
+            задача3ToolStripMenuItem.Size = new Size(148, 43);
+            задача3ToolStripMenuItem.Text = "Задача 3";
+            задача3ToolStripMenuItem.Click += задача3ToolStripMenuItem_Click;
             // 
             // Form1
             // 
@@ -426,5 +434,6 @@
         private ToolStripMenuItem альтернативнаяToolStripMenuItem;
         private ToolStripMenuItem задача1ToolStripMenuItem;
         private ToolStripMenuItem задача2ToolStripMenuItem;
+        private ToolStripMenuItem задача3ToolStripMenuItem;
     }
 }

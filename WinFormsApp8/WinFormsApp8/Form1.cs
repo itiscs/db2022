@@ -86,5 +86,11 @@ namespace WinFormsApp8
             Zadacha1 f = new Zadacha1();
             f.ShowDialog();
         }
+
+        private void задача3ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Zadacha3 f = new Zadacha3();
+            f.ShowDialog();
+        }
     }
 }
